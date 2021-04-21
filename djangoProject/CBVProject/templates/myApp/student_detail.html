@@ -1,0 +1,16 @@
+{%extends "myApp/parent.html"%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+   {%block for_child%}
+      <h1 style="color:blue">Details of {{student.name}}</h1>
+      <h2>Name:{{student.name}}</h2> <br>
+      <h2>Num:{{student.num}}</h2> <br>
+      <h2>Marks:{{student.marks}}</h2><br>
+      <h2 >Place:{{student.place}}</h2>
+      <a href="/update/{{student.id}}" class="btn btn-warning">Update</a>
+      &nbsp &nbsp
+      <a href="/delete/{{student.id}}" class="btn btn-danger">Delete</a>
+   {%endblock%}
+  </body>
+</html>

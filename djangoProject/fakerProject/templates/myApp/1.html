@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <center>
+  <body>
+<h1 style="color:red">Student Record</h1>
+    <table border="2">
+      <tr style="background-color:yellow">
+        <th >Name</th>
+        <th >Num</th>
+        <th >dob</th>
+        <th>email</th>
+        <th >marks</th>
+        <th >Ph</th>
+      </tr>
+        {%for i in s%}
+        <tr style="background-color:#dbd7d7">
+        <td> {{i.name}}</td>
+        <td> {{i.num}}</td>
+        <td> {{i.dob}}</td>
+        <td> {{i.email}}</td>
+        <td> {{i.marks}}</td>
+        <td> {{i.ph}}</td>
+        </tr>
+        {%endfor%}
+
+    </table>
+
+  </body>
+  </center>
+</html>

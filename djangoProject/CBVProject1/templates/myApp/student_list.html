@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    {% for i in student_list %}
+    <a href="/{{i.id}}">{{i.name}}</a><br>
+    
+    {%endfor%}
+   <a href="/create">Create a new rec</a>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% extends "myApp/parent.html" %}
+  <body>
+
+    {%block for_child%}
+    <h1 style="color:blue">Emplopyee Details</h1>
+    <table border="3">
+      <tr>
+        <th><b>Number</b></th>
+        <th><b>Name</b></th>
+        <th><b>Experience</b></th>
+        <th><b>Salary</b></th>
+        <th><b>Address</b></th>
+        <th><b>Phon no</b></th>
+        <th></th>
+        <th></th>
+      </tr>
+        {%for i in e%}
+        <tr>
+        <td><b>{{i.eno}}</b></td>
+        <td><b>{{i.ename}}</b></td>
+        <td><b>{{i.eexp}}</b></td>
+        <td><b>{{i.esal}}</b></td>
+        <td><b>{{i.eaddr}}</b></td>
+        <td><b>{{i.eph}}</b></td>
+        <td><a href="/update/{{i.id}}" class="btn btn-warning">Update</a></td>
+        <td><a href="/delete/{{i.id}}" class="btn btn-danger">Delete</a></td>
+        </tr>
+        {%endfor%}
+
+    </table>
+    <br>
+    <a href="/insert" class="btn btn-success">Click Here To Insert a New Record</a><br>
+    <h1>Search for Record</h1>
+    <form class=""  method="get">
+
+
+    <input type="text" name="ename" value="{{e.ename}}" placeholder="search">
+    <a href="/search/{{e.id}}" class="btn btn-success">Search</a>
+
+
+
+    </form>
+
+    {%endblock%}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <center>
+  <body>
+    <h1 style="color:blue">Employee Details</h1>
+    {%for i in emp%}
+    <h2>Number:{{i.eno}}</h2><br>
+    <h2>Name:{{i.ename}}</h2><br>
+    <h2>Salary:{{i.esal}}</h2><br>
+    <h2>Experience:{{i.eexp}}</h2>
+    <hr>
+    {%endfor%}
+
+  </body>
+  </center>
+</html>

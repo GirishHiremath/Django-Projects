@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "myApp/parent.html" %}
+    {%block for_child%}
+    <h1 style="color:red">Updation Form</h1>
+    <form  method="post">
+
+      <h2>Number:<input type="text" name="eno"  value="{{e.eno}}"><br><br></h2>
+      <h2>Name: <input type="text" name="ename"  value="{{e.ename}}"><br><br></h2>
+      <h2>Experience:<input type="text" name="eexp"   value="{{e.eexp}}"><br><br></h2>
+      <h2>Salary:<input type="text" name="esal" value="{{e.esal}}"><br><br></h2>
+      <h2>Address:<input type="text" name="eaddr"  value="{{e.eaddr}}"><br><br></h2>
+      <h2>Phone:<input type="text"  name="eph" value="{{e.eph}}"><br><br><br></h2>
+      {% csrf_token %}
+      <input type="submit" name="submit" class="btn btn-primary" value="submit">
+    </form>
+    

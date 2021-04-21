@@ -1,0 +1,16 @@
+{%extends "myApp/parent.html"%}
+<!DOCTYPE html>
+<html lang="'en'" dir="ltr">
+  <body>
+    {%block for_child%}
+    <h1 style="color:red">List of students</h1>
+    {%for i in student_list %}
+    <h2><a href="/{{i.pk}}">{{i.name}}</a></h2>
+
+    {% endfor %}
+    <a href="/create">Click Here To Add New Record</a><br><br>
+    <h2>Name: <input type="text" name="name"  value="{{s.name}}"><br><br></h2>
+      <a href="/search/{{student.name}}" class="btn btn-success">Search</a>
+    {% endblock %}
+  </body>
+</html>

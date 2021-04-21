@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends "myApp/parent.html"%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {%block for_child%}
+    <h1 style="color:blue">List of Banks</h1>
+    {%for i in bank%}
+    <a href="/detail/{{i.id}}">{{i.name}}</a><br>
+
+    {%endfor%}
+    <a href="/insert" class="btn btn-success">Click Here To Insert a New Record</a><br>
+    {%endblock%}
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <center>
+      <h1 style="color:blue">Student Record</h1>
+      <table border="2">
+        <tr style="background-color:yellow">
+        <th>Name</th>
+        <th>Number</th>
+        <th>Marks</th>
+        <th>Email</th>
+        <th>phno</th>
+        </tr>
+        {% for i in stud %}
+          <tr style="background-color:#8d8f8e">
+
+            <td>{{i.name}}</td>
+            <td>{{i.num}}</td>
+            <td>{{i.marks}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.ph}}</td>
+
+
+          </tr>
+          {% endfor %}
+          </table>
+          </center>
+
+  </body>
+</html>

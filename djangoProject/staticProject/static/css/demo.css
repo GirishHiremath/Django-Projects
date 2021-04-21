@@ -1,0 +1,21 @@
+h1{
+  color:red;
+}
+h2{
+  color:blue;
+}
+h3{
+  color:green;
+}
+img{
+  height:10%;
+  width:20%;
+  border:2px solid black;
+}
+body{
+  background-color:#9298a1;
+}
+div{
+  display:flex;
+  justify-content:space-between;
+}

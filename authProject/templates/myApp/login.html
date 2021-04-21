@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends "myApp/parent.html"%}
+<html lang="en" dir="ltr">
+  <body>
+    <center>
+    {%block for-child%}
+    <div class="container" align="center">
+      <h1>Hi</h1>
+    <form method="post">
+      {{form.as_p}}
+      {%csrf_token%}
+      <input type="submit" class="btn btn-primary" value="submit">
+    </form>
+    </div>
+    {%endblock%}
+  </center>
+  </body>
+
+</html>

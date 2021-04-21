@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <center>
+    <h1>Student Details</h1>
+    {% for i in student %}
+    <h2>Name:{{i.name}}</h2>
+    <h2>Num:{{i.num}}</h2>
+    <h2>Marks:{{i.marks}}</h2>
+    <h2>____________________</h2>
+    {% endfor %}
+
+    </center>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "myApp/parent.html" %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 style="color:blue">Details of {{e.ename}}</h1>
+{%block for_child%}
+  {{e.eno}}
+  {{e.ename}}
+  {{e.eexp}}
+  {{e.esal}}
+  {{e.eaddr}}
+  {{e.eph}}
+  {%endblock%}
+  </body>
+</html>

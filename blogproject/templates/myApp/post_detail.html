@@ -1,0 +1,10 @@
+{%extends 'myApp/base.html'%}
+{%block title_block%}
+  {{post.title}}
+{%endblock%}
+
+{%block content_block%}
+  <h1>{{post.title}}</h1>
+  <p>Published on {{post.publish}} by {{post.author|title}}</p>
+  {{post.body|linebreaks}}
+{%endblock%}
