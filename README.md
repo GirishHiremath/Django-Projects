@@ -1,1 +1,1 @@
-# Django-Projects Simple projects on Django
+#  Simple projects on Django
